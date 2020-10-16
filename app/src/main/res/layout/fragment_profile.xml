@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ProfileFragment"
+    android:orientation="vertical"
+    android:id="@+id/profileLayoutId"
+    android:background="@color/white"
+    android:clickable="true">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <TextView
+        android:id="@+id/profileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Profile"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        ></TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profileLinear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline6"
+        app:layout_constraintBottom_toTopOf="@id/guideline7"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/LoginLayout"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/profileQuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/exit"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="@id/profileLinear"
+            app:layout_constraintStart_toStartOf="@id/profileLinear"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/profileUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/update"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/profileLinear"
+            app:layout_constraintTop_toTopOf="@id/profileLinear"></ImageView>
+        
+        <ImageView
+            android:id="@+id/profileAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/location"
+            app:layout_constraintBottom_toBottomOf="@id/profileLinear"
+            app:layout_constraintStart_toStartOf="@id/profileLinear"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="50dp"></ImageView>
+        <ImageView
+            android:id="@+id/profileFavourites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/heart"
+            app:layout_constraintBottom_toBottomOf="@id/profileLinear"
+            app:layout_constraintEnd_toEndOf="@id/profileLinear"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="50dp"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Addresses"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@id/profileLinear"
+            app:layout_constraintStart_toStartOf="@id/profileLinear"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="10dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourites"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="@id/profileLinear"
+            app:layout_constraintBottom_toBottomOf="@id/profileLinear"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="23dp"></TextView>
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="@id/profileLinear"
+            app:layout_constraintTop_toTopOf="@id/profileLinear"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/googleplus"></ImageView>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            app:layout_constraintTop_toBottomOf="@id/profileImage"
+            app:layout_constraintStart_toStartOf="@id/profileImage"
+            app:layout_constraintEnd_toEndOf="@id/profileImage"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#000"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <Button
+        android:id="@+id/activeOrderButton"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="My Active Orders"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline7"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:stateListAnimator="@null"></Button>
+    <Button
+        android:id="@+id/previousOrderButton"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="Previous Order"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20dp"
+        android:stateListAnimator="@null"></Button>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

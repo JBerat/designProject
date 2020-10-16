@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/frame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.homefragment"
+    android:background="@color/LoginLayout">
+
+
+
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mSlideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toTopOf="@id/WomanFashion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp">
+        <com.google.android.material.tabs.TabLayout
+
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"/>
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:id="@+id/ManFashion"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Men's Fashion"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:background="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/WomanFashion"
+        android:layout_marginTop="240dp"
+        android:stateListAnimator="@null"></Button>
+
+    <Button
+        android:id="@+id/WomanFashion"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Women's Fashion"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:background="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/ManFashion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ManFashion"
+        android:stateListAnimator="@null"></Button>
+
+    <Button
+        android:id="@+id/Bags"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Bags"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/ManFashion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Toys"
+        android:layout_marginTop="20dp"
+        android:stateListAnimator="@null"></Button>
+
+    <Button
+        android:id="@+id/Toys"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Toys"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/WomanFashion"
+        app:layout_constraintStart_toEndOf="@id/Bags"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:stateListAnimator="@null"></Button>
+
+    <TextView
+        android:id="@+id/Featured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Featured"
+        android:textSize="17dp"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@id/Bags"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/Bags"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/HomeLinearScroll"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:layout_constraintTop_toBottomOf="@id/Featured"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <HorizontalScrollView
+            android:id="@+id/HorizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/splashscreen"/>
+
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/splashscreen"
+                    android:layout_marginLeft="30dp"/>
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/splashscreen"
+                    android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

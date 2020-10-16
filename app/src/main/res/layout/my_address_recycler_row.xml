@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/addressType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New"
+                android:textSize="25dp"
+                android:textColor="@color/LoginSignInButton"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"></TextView>
+
+            <ImageView
+                android:id="@+id/addressUpdateView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/update"
+                android:backgroundTint="#C1C1C1"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="10dp"></ImageView>
+
+            <ImageView
+                android:id="@+id/addressDeleteView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_delete_24"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"></ImageView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/addressPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"></TextView>
+        <TextView
+            android:id="@+id/addressPersonCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"></TextView>
+        <TextView
+            android:id="@+id/addressPersonLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"></TextView>
+        <TextView
+            android:id="@+id/addressPersonDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"></TextView>
+
+        <Button
+            android:id="@+id/addressCurrentButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/LoginSignInButton"
+            android:text="Mark it as Default Address"
+            android:layout_marginTop="10dp"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/addedPhotoImage"
+            android:layout_width="100dp"
+            android:layout_height="110dp"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addedFashionNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Mini Sleeveless Vestidos"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"></TextView>
+
+            <TextView
+                android:id="@+id/addedFashionTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/LoginSignInButton"
+                android:text="Dress"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/addedFashionSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size: "
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"></TextView>
+                <TextView
+                    android:id="@+id/addedFashionSizeType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small"
+                    android:textSize="12dp"></TextView>
+
+                <TextView
+                    android:id="@+id/addedFashionNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="150dp"
+                    android:paddingLeft="20dp"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/totalItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="25 TL"
+                android:textColor="@color/priceBlue"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="5dp"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

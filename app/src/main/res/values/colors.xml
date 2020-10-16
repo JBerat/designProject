@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorSplash">#0c96c3</color>
+    <color name="LoginScreen">#F2F2F2</color>
+    <color name="LoginLayout">#F7F7F7</color>
+    <color name="LoginSignInButton">#CFAD89</color>
+    <color name="ForgotPasswordButton">#DB4D40</color>
+    <color name="AppleBackground">#000</color>
+    <color name="white">#fff</color>
+    <color name="priceBlue">#3A5EB2</color>
+    <color name="quitButtonColor">#F6B4BD</color>
+    <color name="updateProfileButton">#B3B2B2</color>
+    <color name="profileEditText">#F7F7F7</color>
+    <color name="AddressText">#8BC34A</color>
+    <color name="PayLinearLayout">#E7E7E7</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+
+</resources>
