@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+        android:id="@+id/side_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"></item>
+        <item
+            android:id="@+id/side_"
+            android:title="Profile"
+            android:icon="@drawable/loginuser"></item>
+        <item
+            android:id="@+id/side_search"
+            android:title="Search"
+            android:icon="@drawable/searchicon"></item>
+        <item
+            android:id="@+id/side_address"
+            android:title="Address"
+            android:icon="@drawable/location"></item>
+
+
+
+
+
+
+    </group>
+
+</menu>

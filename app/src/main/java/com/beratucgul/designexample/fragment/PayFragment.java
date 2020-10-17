@@ -86,14 +86,25 @@ public class PayFragment extends Fragment {
         SharedPreferences Size = getActivity().getSharedPreferences("Size", Context.MODE_PRIVATE);
         String size = Size.getString("size", "");
 
+      /*  SharedPreferences Desc = getActivity().getSharedPreferences("Desc", Context.MODE_PRIVATE);
+        String desc = Desc.getString("desc", "");
+
+       */
+
+        SharedPreferences Name = getActivity().getSharedPreferences("Name", Context.MODE_PRIVATE);
+        String name = Name.getString("name", "");
+
+        SharedPreferences Type = getActivity().getSharedPreferences("Type", Context.MODE_PRIVATE);
+        String type = Type.getString("type", "");
+
 
         payCartPhoto.add(photo);
         //payCartPhoto.add(photo);
 
-        fashionNameList.add("Deneme2");
+        fashionNameList.add(name);
         //fashionNameList.add("deneme3");
 
-        fashionTypeList.add("Deneme2");
+        fashionTypeList.add(type);
         //fashionTypeList.add("deneme3");
 
         fashionSizeList.add("deneme3");
@@ -116,6 +127,8 @@ public class PayFragment extends Fragment {
         payRecyclerView.setAdapter(payCartRecyclerAdapter);
 
 
+
+       // payCartRecyclerAdapter.notifyDataSetChanged();
 
 
 

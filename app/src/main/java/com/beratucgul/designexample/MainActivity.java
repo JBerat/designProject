@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void signIn(View view) {
 
-        Intent intent = new Intent(MainActivity.this, HomePage.class);
+        Intent intent = new Intent(MainActivity.this, HomePageMain.class);
         startActivity(intent);
         finish();
 

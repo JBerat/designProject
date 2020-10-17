@@ -92,6 +92,18 @@ public class womenTopFragment extends Fragment {
                editor.putInt("image", TopPhoto.get(position));
                editor.commit();
 
+               SharedPreferences Name = getActivity().getSharedPreferences("Name", Context.MODE_PRIVATE);
+               SharedPreferences.Editor editor1 = Name.edit();
+               editor1.putString("name", TopName.get(position));
+               editor1.commit();
+
+               SharedPreferences Type = getActivity().getSharedPreferences("Type", Context.MODE_PRIVATE);
+               SharedPreferences.Editor editor2 = Type.edit();
+               editor2.putString("type", TopType.get(position));
+               editor2.commit();
+
+
+
 
 
 

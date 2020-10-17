@@ -1,5 +1,6 @@
 package com.beratucgul.designexample.fragment;
 
+import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -103,6 +104,11 @@ public class womanTopItemDetailFragment extends Fragment {
                 editor1.putString("size", LargeSize.getText().toString());
                 editor1.commit();
 
+
+                SharedPreferences ItemDesc = getActivity().getSharedPreferences("Desc", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor2 = ItemDesc.edit();
+                editor2.putString("desc",topItemDescription.getText().toString());
+                editor2.commit();
 
 
 
