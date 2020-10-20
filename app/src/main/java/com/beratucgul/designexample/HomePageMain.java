@@ -42,7 +42,7 @@ public class HomePageMain extends AppCompatActivity {
 
         mToolbar =  findViewById(R.id.toolbarLast);
         setSupportActionBar(mToolbar);
-
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
        // Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
       //  getSupportActionBar().setDisplayShowHomeEnabled(true);
         drawerLayout = findViewById(R.id.navigation_layout);

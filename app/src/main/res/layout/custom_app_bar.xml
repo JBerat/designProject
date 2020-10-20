@@ -9,29 +9,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <com.google.android.material.appbar.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            app:elevation="0dp"
             android:id="@+id/app_bar"
-            android:theme="@style/AppTheme.AppBarOverlay">
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            app:elevation="0dp">
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarLast"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="@color/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay"
-                />
+                android:layout_height="50dp"
+                android:background="#00008577"
+                app:navigationIcon="@drawable/ic_menu_icon"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
         </com.google.android.material.appbar.AppBarLayout>
-        
+
         <fragment
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:id="@+id/nav_host_fragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
+            android:background="#00FFFFFF"
             app:defaultNavHost="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             app:navGraph="@navigation/mobile_navigation" />
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
@@ -42,9 +45,6 @@
             app:itemIconTint="#000"
             app:itemTextColor="#000"
             app:menu="@menu/bottom_nav_menu" />
-
-
-
 
 
     </LinearLayout>
